@@ -3,7 +3,7 @@ namespace Catalog.API.Models;
 public class Product
 {
     public Guid Id { get; set; }
-    public string Name { get; set; }
+    public required string Name { get; set; }
     public List<string> Categories { get; set; } = new();
     public string Description { get; set; } = default!;
     public string ImageFile { get; set; } = default!;
